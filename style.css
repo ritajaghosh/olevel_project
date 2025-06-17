@@ -1,0 +1,19 @@
+   body{
+      background-image: linear-gradient(rgb(218, 194, 207), rgb(220, 221, 148));
+     }
+   .hero {
+      height: 70vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+  
