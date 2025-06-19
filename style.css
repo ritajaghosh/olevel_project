@@ -1,19 +1,73 @@
-   body{
-      background-image: linear-gradient(rgb(218, 194, 207), rgb(220, 221, 148));
-     }
-   .hero {
-      height: 70vh;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
+   body {
+     background-image: linear-gradient(rgb(218, 194, 207), rgb(220, 221, 148));
+   }
+
+   .scrolling-text {
+      white-space: nowrap;
+      overflow: hidden;
+      position: relative;
+      background-color: #f8f9fa;
     }
-    .hero h1 {
-      font-size: 3rem;
+
+    .scrolling-text h1 {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 10s linear infinite;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    /* Basic layout styling */
+    .navbar {
+      background-color: #343a40;
+      color: white;
+      padding: 1rem;
+    }
+
+    .navbar button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 24px;
+    }
+
+    .sidebar {
+      width: 200px;
+      position: fixed;
+      top: 56px; /* height of navbar */
+      left: 0;
+      background-color: #212529;
+      color: white;
+      height: 100%;
+      padding-top: 1rem;
+    }
+
+    .sidebar a {
+      color: white;
+      display: block;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #495057;
+    }
+
+    #main-div {
+      margin-left: 200px;
+    }
+
+    .hero-img {
+      padding: 1rem;
+    }
+
+    .hero-img h1 {
       font-weight: bold;
     }
-    .hero p {
-      font-size: 1.25rem;
-    }
-  
